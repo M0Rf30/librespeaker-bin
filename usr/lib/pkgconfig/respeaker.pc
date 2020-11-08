@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${prefix}/lib/
+includedir=${prefix}/include
+
+Name: respeaker
+Description: ReSpeaker SDK Library
+Version: 2.1.2
+Libs: -L${libdir} -lrespeaker -lsnowboy
+Cflags: -I${includedir}/respeaker   -DWEBRTC_LINUX -DWEBRTC_POSIX -DWEBRTC_NS_FLOAT -DWEBRTC_APM_DEBUG_DUMP=0 -DWEBRTC_INTELLIGIBILITY_ENHANCER=0
